@@ -21,3 +21,11 @@ git - is a version control system used by both large companies and individual so
   - `git pull` - a quick command that replaces the alternate execution of the next two commands:
     - `git fetch <remote branch>` - retrieves the state of the specified remote branch
     - `git merge` - updates the local branch to the pulled state of the remote branch
+
+## What is a "commit" and how does it allow you to track changes to files?
+
+Commit may be a preview of the state of the working tree at a certain point in time. The commit pointed to by HEAD gets to be its parent when a modern commit is made. This implies that git within the commit spares the changes made on the past commit (parent).
+
+Working tree is any registry on your record framework that includes a store related with it. Incorporates all records and subdirectories of that registry.
+
+A store may be a collection of commits, each of which is an file of what the project's working tree looked like at a few point within the past. It too indicates the head (HEAD), which recognizes the department or commit from which the current working tree branches. 
