@@ -15,31 +15,34 @@
 Усі завдання виконані відповідно до навчальної програми.  
 
 ## 📂 Структура проєкту  
-```plaintext
-📦 OS_labs  
- ┣ 📂 work-cases
- ┃ ┣ 📂 СРС_WORK-CASE №1  # Основи роботи з Git  
- ┃ ┣ 📂 СРС_WORK-CASE №2  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №3  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №4  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №5  # Comming soon . . . 
- ┃ ┣ 📂 СРС_WORK-CASE №6  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №7  # Comming soon . . .
- ┃ ┗ 📂 СРС_WORK-CASE №8  # Comming soon . . .
- ┣ 📂 labs
- ┃ ┣ 📂 СРС_WORK-CASE №1  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №2  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №3  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №4  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №5  # Comming soon . . . 
- ┃ ┣ 📂 СРС_WORK-CASE №6  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №7  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №8  # Comming soon . . .
- ┃ ┣ 📂 СРС_WORK-CASE №9  # Comming soon . . .
- ┃ ┗ 📂 СРС_WORK-CASE №10  # Comming soon . . .
- ┣ 📜 README.md  - Ви ТУТ
- ┗ 📜 .gitignore  
-```
+
+📦 **OS_labs**  
+ ┃  
+ ┣ 📂 **work-cases**  
+ ┃ ┣ 📂 [СРС_WORK-CASE №1](https://github.com/Nillya/OS_labs/tree/main/work-cases/%D0%A1%D0%A0%D0%A1_WORK-CASE%20%E2%84%961) # Основи роботи з Git  
+ ┃ ┣ 📂 [СРС_WORK-CASE №2](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...   
+ ┃ ┣ 📂 [СРС_WORK-CASE №3](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...   
+ ┃ ┣ 📂 [СРС_WORK-CASE №4](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...   
+ ┃ ┣ 📂 [СРС_WORK-CASE №5](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...   
+ ┃ ┣ 📂 [СРС_WORK-CASE №6](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...   
+ ┃ ┣ 📂 [СРС_WORK-CASE №7](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...   
+ ┃ ┣ 📂 [СРС_WORK-CASE №8](https://github.com/Nillya/OS_labs/tree/main/work-cases/) # Coming soon...  
+ ┃  
+ ┣ 📂 **labs**  
+ ┃ ┣ 📂 [LAB №1](https://github.com/Nillya/OS_labs/tree/main/labs/%E2%84%961) # Знайомство з Linux  
+ ┃ ┣ 📂 [LAB №2](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №3](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №4](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №5](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №6](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №7](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №8](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┣ 📂 [LAB №9](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃ ┗ 📂 [LAB №10](https://github.com/Nillya/OS_labs/tree/main/labs/) # Coming soon...  
+ ┃  
+ ┣ 📜 [README.md](https://github.com/Nillya/OS_labs/blob/main/README.md) # Ви ТУТ  
+ ┗ 📜 [.gitignore](https://github.com/Nillya/OS_labs/blob/main/.gitignore)  
+
 
 
 ## FAQ
