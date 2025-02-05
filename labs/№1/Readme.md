@@ -189,6 +189,7 @@ After installation, set the system to boot into graphical mode:
 sudo systemctl set-default graphical.target
 reboot
 ```
+---
 
 ### **2.5. Overview of KDE and Fluxbox Desktop Environments**
 
@@ -218,13 +219,13 @@ By leveraging Xen and virtualization tools, users can optimize performance, secu
 
 ### Відповіді на контрольні питання:
 
--   1. Type 1 hypervisor (Standalone hypervisor) type 2 (Based on the underlying OS) differ in that the type 1 hypervisor runs directly on the hardware and is independent of the underlying OS, while the type 2 hypervisor can run directly on the physical processor, but access to the computer's I/O devices from the guest OS is through a second component, the usual processor of the underlying OS - the user-level monitor. A type 1 hypervisor has a higher performance than a type 2 hypervisor. 
+-  .1. Type 1 hypervisor (Standalone hypervisor) type 2 (Based on the underlying OS) differ in that the type 1 hypervisor runs directly on the hardware and is independent of the underlying OS, while the type 2 hypervisor can run directly on the physical processor, but access to the computer's I/O devices from the guest OS is through a second component, the usual processor of the underlying OS - the user-level monitor. A type 1 hypervisor has a higher performance than a type 2 hypervisor. 
 
--  2. GNU General Public License (GNU General Public License or GNU General Public License) is one of the most popular free software licenses. The concept of "GNU GPL" is to provide licenses for the distribution of programs, plug-ins or class libraries for free and open source.
--  3. The essence of open-source software is that the source code is freely available for anyone to access, use, modify, and distribute, without restrictions or fees.
--  4. A distribution kit is a package that contains all the files necessary to install and run a software program on a particular operating system or platform.
+-  .2. GNU General Public License (GNU General Public License or GNU General Public License) is one of the most popular free software licenses. The concept of "GNU GPL" is to provide licenses for the distribution of programs, plug-ins or class libraries for free and open source.
+-  .3. The essence of open-source software is that the source code is freely available for anyone to access, use, modify, and distribute, without restrictions or fees.
+-  .4. A distribution kit is a package that contains all the files necessary to install and run a software program on a particular operating system or platform.
 
--  5.  The main tasks of the system administrator (superuser) in Linux include:
+-  .5.  The main tasks of the system administrator (superuser) in Linux include:
 installation of the OS;
 managing the OS boot process;
 setting the operating modes of the OS;
@@ -236,11 +237,11 @@ configuring the OS kernel;
 ensuring reliable operation of the OS;
 configuring a computer network.
 
-- 6. Android is a mobile operating system based on the Linux kernel. It uses the Linux kernel as its foundation, but also includes its own unique user interface and software stack.
+- .6. Android is a mobile operating system based on the Linux kernel. It uses the Linux kernel as its foundation, but also includes its own unique user interface and software stack.
 
-- 7. Embedded Linux is a version of the Linux operating system designed for use in embedded systems, such as smartphones, routers, and other small devices. Its main features include a small footprint, real-time capabilities, and support for a wide range of hardware architectures. The scope of Embedded Linux includes industrial automation, automotive systems, medical devices, and more.
+- .7. Embedded Linux is a version of the Linux operating system designed for use in embedded systems, such as smartphones, routers, and other small devices. Its main features include a small footprint, real-time capabilities, and support for a wide range of hardware architectures. The scope of Embedded Linux includes industrial automation, automotive systems, medical devices, and more.
  
-- 8. The process of changing the Linux boot type from graphical to text or vice versa depends on the specific Linux distribution and version are using but there are general steps that work on some systems:
+- .8. The process of changing the Linux boot type from graphical to text or vice versa depends on the specific Linux distribution and version are using but there are general steps that work on some systems:
    - Boot your Linux system and wait for the bootloader screen to appear.
    - Select the boot option you want to modify and press the "e" key to edit it.
    - Locate the line that starts with "linux" or "linuxefi" and append the word "text" (for text mode) or "graphical" (for graphical mode) at the end of the line.
