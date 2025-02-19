@@ -142,3 +142,142 @@
 | date --help | Another way of getting help is by using the --help option to a command. Most commands allow you to pass an argument of --help to view basic command usage:  |
 
 ---
+
+### 🔹 **2. Робота в терміналі**
+
+#### 2.1. Робота зі змінними (Variables) та псевдонімами (Aliases) в терміналі
+
+- Створіть змінні, що будуть містити Ваші імена та прізвища `$var_name1`, `$var_name2`, `$var_name3`.
+
+```bash
+var_name1="Illya Nagorny"
+```
+
+![var_name1="Illya Nagorny" PHOTO](https://i.ibb.co/xKyBm0kF/firefox-h-KDXFyd0cu.png)
+
+- За допомогою команди `echo` виведіть імена студентів вашої команди.
+
+```bash
+echo "Team students: $var_name1"
+```
+
+![echo "Team students: $var_name1" PHOTO](https://i.ibb.co/xSnLT1Zs/firefox-YI2ym-RXFot.png)
+
+- Створіть псевдоніми `mycal1`, `mycal2`, `mycal3` для команди `cal` для автоматичного виведення календарю вашого року народження. (Також додав дату)
+
+```bash
+alias mycal1='cal 7 2007; date -d "2007-06-07" "+%d.%m.%Y"'
+```
+
+![PHOTO](https://i.ibb.co/fG2Hnczc/image.png)
+
+#### 2.2. Робота з функціями (Functions) в терміналі
+
+- Створіть функцію `students_report`, що порядково буде виводити спочатку імена студентів Вашої команди, а потім роки їх народження.
+
+```bash
+students_report() { echo "Student name: $var_name1"; mycal1; }; students_report
+```
+
+![PHOTO](https://i.ibb.co/vx5MHjjs/image.png)
+
+#### 2.3. Робота з лапками (Quoting) в терміналі
+
+- Виведіть в командному рядку наступні речення:
+
+  - **"We create such variables as `$var_name1`, `$var_name2`, `$var_name3`, which stored our names Name1, Name2, Name3"** (у реченні спочатку виводимо назви змінних, а потім їх вміст).
+
+  ```bash
+  echo "We create such variables as \$var_name1, which stored our names $var_name1"
+  ```
+
+  ![PHOTO](https://i.ibb.co/0Rq35Y40/image.png)
+
+  - **"We create such Aliases as `mycal1`, `mycal2`, `mycal3`, which can show our calendars: Calendar1, Calendar2, Calendar3"** (у реченні спочатку виводимо назву команди-псевдонімів, потім вивід цих команд).
+
+  ```bash
+  echo We create such Aliases as \mycal1, which can show our calendars: ;mycal1
+  ```
+
+  ![PHOTO](https://i.ibb.co/PGTmWp2D/image.png)
+
+#### 2.4. Робота з інструкціями керування (Control Statements) в терміналі
+
+- Чи можна завдання 2.1 та 2.2 ходу роботи виконати через інструкції керування без написання окремої функції, як це буде виглядати?
+
+```bash
+echo $var_name1 ; mycal1
+```
+
+![PHOTO](https://i.ibb.co/ynY8JkF1/image.png)
+
+#### 2.5. Робота з командами довідки (Man Pages) в терміналі
+
+- На прикладі команди `uname` продемонструйте, як отримати довідку. На основі отриманої додаткової інформації наведіть 5 різних варіантів виводу результату інформації по даній команді з використанням 5 різних параметрів (Options):
+
+```bash
+uname -s # OS name
+uname -n # Hostname
+uname -r # Kernel version
+uname -m # Processor architecture
+uname -o # Operating System
+```
+
+![PHOTO](https://i.ibb.co/tpjbM2kj/image.png)
+
+---
+
+### ✏️ **Відповіді на контрольні питання:**
+
+1. **Які типи команд існують в оболонці Bash?**
+   - **Built-in commands:** These are commands that are built into the shell itself, such as `cd` (change directory) and `echo` (print to screen).
+   - **External commands:** These are commands that are separate programs installed on the system, such as `ls` (list files) and `grep` (search for text in a file).
+   - **Alias commands:** These are custom shortcuts that can be created by the user to execute a longer command with a shorter name.
+   - **Function commands:** These are custom commands created by the user using shell programming constructs.
+
+2. **Що таке змінні оточення? Які вони бувають? Як їх можна переглянути в терміналі?**
+   - **Environment variables** are variables that are set in the shell's environment and are accessible to any program or command run in that environment. They are used to store information that may be needed by multiple programs or commands. Some common environment variables include `PATH` (which stores a list of directories to search for executables), `HOME` (which stores the path to the user's home directory), and `USER` (which stores the username of the current user). You can view these variables in the terminal by using the command `printenv` or by using the command `echo` with the variable name preceded by a `$` sign (e.g., `echo $PATH`).
+
+3. **Опишіть змінну $PS1. Як в терміналі переглянути її вміст?**
+   - The variable `$PS1` defines the prompt string displayed before each command in the terminal. The default value is `"\s-\v$ "`, which shows the shell's name and its version number, followed by a dollar sign. To view the contents of `$PS1`, use the command:
+     ```bash
+     echo $PS1
+     ```
+
+4. **Як можна змінити значення змінної $PS1? Що при цьому відбудеться в рядку запрошення в bash? Як змінити значення цієї змінної не на поточний сеанс, а за замовчуванням?**
+   - To change the value of `$PS1`, assign a new value using the `export` command. For example:
+     ```bash
+     export PS1='\w$ '
+     ```
+     This will display the current working directory in the prompt. To make this change permanent, add the new value to the shell configuration file (`~/.bashrc` or `~/.bash_profile`).
+
+5. **Для чого використовують лапки в оболонці Bash?**
+   - Quotation marks are used to group words together as a single argument, especially when words contain spaces or special characters. There are two types of quotation marks:
+     - **Single quotes** (`'...'`) preserve the literal value of all characters within the quotes.
+     - **Double quotes** (`"..."`) allow certain characters (like variables) to be expanded. 
+     - **Backslashes** (`\`) can also be used to escape special characters within quotes.
+
+6. **Для чого використовують інструкції керування, які їх види Ви знаєте?**
+   - **Control instructions** (also called control structures) are used to execute commands conditionally or repeatedly. Some common types include:
+     - `if/else` statements: Execute commands based on a condition.
+     - `for` loops: Execute commands for each element in a list or range.
+     - `while` loops: Execute commands as long as a condition is true.
+     - `case` statements: Execute commands based on a specific pattern.
+
+7. **В чому різниця, якщо в кінці рядку запрошення bash стоїть символ `$` чи `#`?**
+   - 📌 [centos@localhost Desktop]$ 
+   - 📌 [root@localhost Desktoop]# 
+     - The Bash prompt line ends with a `$` for a regular user and `#` for the root user. The hash symbol (`#`) indicates that the user has superuser privileges, while the dollar sign (`$`) indicates a regular user.
+
+8. **Яке призначення команд `whereis` та `locate`? Яка між ними відмінність?**
+   - The `whereis` and `locate` commands are used to find files on the system:
+     - **`whereis`** searches for executable files, source files, and manual pages for a specific command or program.
+     - **`locate`** searches the entire system for files and directories based on a specified pattern.
+   - The difference is that `whereis` searches a limited set of directories, while `locate` searches the whole system's database. `Locate` is faster but may not always return the most up-to-date results if the system's database is out of date.
+
+---
+   
+## 🏁 **Висновки**
+
+У лабораторній роботі я розглянув основи роботи з командним рядком у Linux. Зокрема, я освоїв використання базових команд, таких як `alias`, `echo`, а також навчився працювати зі змінними, псевдонімами та функціями. Ці знання дозволяють мені ефективно виконувати різні операції в терміналі, спрощуючи роботу з файловою системою та підвищуючи мою ефективність у Linux-середовищі.
+
