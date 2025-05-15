@@ -62,7 +62,7 @@
 A pseudo-file system (for example, `/proc`) is a virtual file system that does not store data on physical media, but provides an interface for accessing system state information such as processes, memory, or kernel configuration. The system needs it for convenient access to this data in the form of files, which allows programs and users to obtain system information without directly accessing the kernel.
 
 **4.2. Чому користувачі не так часто звертаються на пряму до каталогу `/proc`, яким чином з нього можна отримати інформацію?**  
-Users rarely access `/proc' directly, because the data there is presented in a specific format intended more for program use than for human reading. You can get information through specialized commands such as `ps`, `top`, or `free`, which interpret the contents of `/proc`. You can also view the files directly, for example, `cat /proc/meminfo' for memory information.
+Users rarely access `/proc` directly, because the data there is presented in a specific format intended more for program use than for human reading. You can get information through specialized commands such as `ps`, `top`, or `free`, which interpret the contents of `/proc`. You can also view the files directly, for example, `cat /proc/meminfo' for memory information.
 
 **4.3. Яке призначення файлів `/proc/cmdline`, `/proc/meminfo` та `/proc/modules`?**  
 - `/proc/cmdline` - contains command line parameters passed to the kernel during boot (for example, root=UUID=xxx).
