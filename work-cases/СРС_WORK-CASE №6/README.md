@@ -63,6 +63,7 @@ sudo groupadd financiers
 sudo groupadd founders
 sudo groupadd guests
 ```
+![](https://i.ibb.co/C3ZYjBkw/image.png)
 
 Next, create the users and assign them to their respective groups:
 
@@ -87,6 +88,7 @@ sudo useradd -m -G founders user9
 # Guests
 sudo useradd -m -G guests user10
 ```
+![](https://i.ibb.co/jkV7w7cN/image.png)
 
 Set passwords for each user:
 
@@ -102,12 +104,18 @@ sudo passwd user8
 sudo passwd user9
 sudo passwd user10
 ```
+![](https://i.ibb.co/Kx0HNwDj/image.png)
 
 To confirm the group assignments, use:
 
 ```bash
 groups user1
+groups user3
+groups user6
+groups user8
+groups user10
 ```
+![](https://i.ibb.co/VpmhLPzF/image.png)
 
 ---
 
@@ -145,6 +153,7 @@ sudo usermod -s /usr/sbin/nologin user10
 ```
 
 The `/usr/sbin/nologin` shell prevents users from accessing a command-line interpreter.
+![](https://i.ibb.co/v4dztKVk/image.png)
 
 ---
 
@@ -175,6 +184,7 @@ date
 ```bash
 pwd
 ```
+![](https://i.ibb.co/b5h2x4Vp/image.png)
 
 #### Developers (zsh):
 

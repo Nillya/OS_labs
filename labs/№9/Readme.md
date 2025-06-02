@@ -127,6 +127,7 @@ Group settings can be modified with the `groupmod` command. Examples:
   grep "good_students" /etc/group
   ```
   Output shows group names and GIDs (e.g., `super_admins:x:1001:`).
+  ![](https://ibb.co/Z6m8kwH5)
 
 #### **Create Three New Users**
 - Commands (assuming working alone):  

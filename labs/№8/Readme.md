@@ -163,7 +163,7 @@ The Filesystem Hierarchy Standard (FHS) defines a standard directory structure i
   ```bash
   cat -s newfile.txt
   ```
-
+  ![](https://i.ibb.co/qYt4QL8K/image.png)
 #### **Можливості команди `dig`**
 Команда `dig` (Domain Information Groper) використовується для DNS-запитів, щоб отримати інформацію про IP-адреси чи інші записи.  
 **Приклад:**  
@@ -179,14 +179,19 @@ dig test.com
   ```bash
   netstat -a
   ```
+  ![](https://i.ibb.co/FkPnj73z/image.png)
+
 - Перегляд прослуховуваних портів:  
   ```bash
   netstat -l
   ```
+  ![](https://i.ibb.co/ynjfFsfz/image.png)
+
 - Статистика протоколів:  
   ```bash
   netstat -s
   ```
+  ![](https://i.ibb.co/d40P5BKX/image.png)
 
 ---
 
